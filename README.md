@@ -1,3 +1,3 @@
-# Fogstream
+# News of culture
 
 # Author: Lubov

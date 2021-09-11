@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Новости культуры</title>
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Yeseva+One&display=swap"
@@ -14,169 +14,170 @@
     />
   </head>
   <body>
-    <header class="header_main">
-      <div class="logo">
-        <img src="./img/logo.svg" alt="Logo" class="logo_img" />
-      </div>
-      <div class="navigation">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="#" class="nav_link">Новости</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Обзоры</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Музыка</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Архитектура</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Кино</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Театр</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Литература</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Религия</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link">Живопись</a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <div class="intro">
-      <div class="container_intro">
-        <span class="intro_span">Подводный отель</span>
-        <div class="intro_description">
-          <p class="intro_text">
-            Как известно, Дубай – город контрастов. Самые революционные и
-            фантастические мечты архитекторов способен воплотить в жизнь этот
-            мегаполис, построенный на нефти и за счет нефти
-          </p>
+  <div class="wrapper">
+      <header class="header">
+        <div>
+          <img src="./img/logo.svg" alt="Logo" class="header__logo" />
+        </div>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Обзоры</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Музыка</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Архитектура</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Кино</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Театр</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Литература</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Религия</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Живопись</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="intro">
+        <div class="intro__container">
+          <div class="intro__back"><img src="./img/underwater-hotel.jpg" alt="Главная картинка"></div>
+          <span class="intro__span">Подводный отель</span>
+          <div class="intro__description">
+            <p class="intro__text">
+              Как известно, Дубай – город контрастов. Самые революционные и
+              фантастические мечты архитекторов способен воплотить в жизнь этот
+              мегаполис, построенный на нефти и за счет нефти
+            </p>
+          </div>
         </div>
       </div>
+      <section class="view">
+        <div class="view__container">
+          <h3 class="view__heading">Обзоры</h3>
+          <div class="view__blocks">
+            <div class="view__block">
+              <img
+                      src="./img/monparnasse.jpg"
+                      alt="Monparnasse"
+              />
+              <a href="#" class="view__link">«Шальные годы» Монпарнаса</a>
+              <p>
+                В Музее изобразительных искусств имени Пушкина с 29 сентября по 29
+                ноября проходит выставка «Шальные годы Монпарнаса»
+              </p>
+            </div>
+            <div class="view__block">
+              <img
+                      src="./img/clay-in-the-hands.jpg"
+                      alt="Clay in the hands"
+              />
+              <a href="#" class="view__link">Анатомия за 30 секунд</a>
+              <p>
+                Сейчас, когда мир открыт нараспашку для человека и его
+                познавательных изысканий, интерес к научно-популярной литературе
+                заметно вырос
+              </p>
+            </div>
+            <div class="view__block">
+              <img
+                      src="./img/spherical-eccentrics.jpg"
+                      alt="Eccentrics"
+              />
+              <a href="#" class="view__link">Сферические чудаки</a>
+              <p>
+                Корреспондентам «Культурного обозревателя» посчастливилось
+                побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__blocks">
+          <h3 class="about__head">Абонементы в театр</h3>
+          <div class="about__block">
+            <a href="#" class="about__link">Скидка 50% на весь сезон 2020</a>
+            <p>
+              Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости
+              всех спектаклей
+            </p>
+          </div>
+          <div class="about__block">
+            <a href="#" class="about__link">Места у сцены</a>
+            <p>
+              Только для обладателей абонементов будет возможность сесть поближе к
+              сцене
+            </p>
+          </div>
+          <div class="about__block">
+            <a href="#" class="about__link">Автограф-сессия актёров</a>
+            <p>
+              После спектаклей у вас будет возможность пообщаться с актёрами и взять
+              у них автограф
+            </p>
+          </div>
+          <a href="#" id="watch">Смотреть</a>
+        </div>
+      </section>
+      <footer>
+        <img src="./img/white-logo.svg" alt="White logo" id="logo__white" />
+        <div class="footer">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Обзоры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Музыка</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Архитектура</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Кино</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Театр</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Литература</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Религия</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Живопись</a>
+            </li>
+          </ul>
+        </div>
+        <div class="socials">
+          <a href="#" class="instagram">
+            <img src="./img/instagram_icon.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="facebook">
+            <img src="./img/facebook_icon.svg" alt="Facebook" />
+          </a>
+          <a href="#" class="twitter">
+            <img src="./img/twitter_icon.svg" alt="Twitter" />
+          </a>
+        </div>
+      </footer>
     </div>
-    <section class="views">
-      <div class="container_views">
-        <h3 class="view_heading">Обзоры</h3>
-        <div class="views_blocks">
-          <div class="views_block">
-            <img
-              src="./img/monparnasse.jpg"
-              alt="Monparnasse"
-              class="img_block"
-            />
-            <a href="#" class="view_link">«Шальные годы» Монпарнаса</a>
-            <p>
-              В Музее изобразительных искусств имени Пушкина с 29 сентября по 29
-              ноября проходит выставка «Шальные годы Монпарнаса»
-            </p>
-          </div>
-          <div class="views_block">
-            <img
-              src="./img/clay-in-the-hands.jpg"
-              alt="Clay in the hands"
-              class="img_block"
-            />
-            <a href="#" class="view_link">Анатомия за 30 секунд</a>
-            <p>
-              Сейчас, когда мир открыт нараспашку для человека и его
-              познавательных изысканий, интерес к научно-популярной литературе
-              заметно вырос
-            </p>
-          </div>
-          <div class="views_block">
-            <img
-              src="./img/spherical-eccentrics.jpg"
-              alt="Eccentrics"
-              class="img_block"
-            />
-            <a href="#" class="view_link">Сферические чудаки</a>
-            <p>
-              Корреспондентам «Культурного обозревателя» посчастливилось
-              побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="abonements">
-      <div class="abonements_block">
-        <h3 class="heading_ab">Абонементы в театр</h3>
-      <div class="sale_block">
-        <a href="#" class="sale_link">Скидка 50% на весь сезон 2020</a>
-        <p>
-          Покупая абонемент на сезон 2020 года вы сэкономите половину стоимости
-          всех спектаклей
-        </p>
-      </div>
-      <div class="sits_block">
-        <a href="#" class="sits_link">Места у сцены</a>
-        <p>
-          Только для обладателей абонементов будет возможность сесть поближе к
-          сцене
-        </p>
-      </div>
-      <div class="autograph_block">
-        <a href="#" class="autograph_link">Автограф-сессия актёров</a>
-        <p>
-          После спектаклей у вас будет возможность пообщаться с актёрами и взять
-          у них автограф
-        </p>
-      </div>
-      <a href="#" class="watch">Смотреть</a>
-      </div>
-    </section>
-    <footer>
-      <img src="./img/white-logo.svg" alt="White logo" class="logo_white" />
-      <div class="footer_nav">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Новости</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Обзоры</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Музыка</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Архитектура</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Кино</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Театр</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Литература</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Религия</a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="footer_nav_link">Живопись</a>
-          </li>
-        </ul>
-      </div>
-      <div class="socials">
-        <a href="#" class="instagram">
-          <img src="./img/instagram_icon.svg" alt="Instagram" />
-        </a>
-        <a href="#" class="facebook">
-          <img src="./img/facebook_icon.svg" alt="Facebook" />
-        </a>
-        <a href="#" class="twitter">
-          <img src="./img/twitter_icon.svg" alt="Twitter" />
-        </a>
-      </div>
-    </footer>
   </body>
 </html>

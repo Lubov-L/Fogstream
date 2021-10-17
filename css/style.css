@@ -61,6 +61,7 @@ a:hover{
   text-decoration: underline;
 }
 
+
 .intro{
   width: 100%;
   margin: 0 auto;
@@ -142,6 +143,16 @@ a:hover{
   display: flex;
   flex-direction: column;
   margin-right: 5%;
+  padding: 0 10px 0 10px;
+}
+
+.view__block > img{
+  width: 100%;
+}
+
+.view__block > a,
+.view__block > p{
+  text-align: center;
 }
 
 .view__block:last-child{
@@ -265,7 +276,6 @@ footer{
 @media screen and (max-width: 1400px){
 
   .view__blocks{
-    padding: 0 10px 0 10px;
     width: 100%;
   }
 
@@ -295,6 +305,7 @@ footer{
 
   .view__block{
     max-width: 60%;
+    margin: 0;
   }
 
   .intro__span{

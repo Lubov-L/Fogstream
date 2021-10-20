@@ -312,7 +312,7 @@ footer{
     font-size: 45px;
   }
 
-  .nav__icon {
+  .header__icon {
     z-index: 5;
     display: block;
     position: relative;
@@ -321,15 +321,15 @@ footer{
     cursor: pointer;
   }
 
-  .nav__header{
+  .header__nav{
     align-self: flex-start;
     padding-left: 20px;
     margin-bottom: 30px;
   }
 
-  .nav__icon span,
-  .nav__icon::before,
-  .nav__icon::after {
+  .header__icon span,
+  .header__icon::before,
+  .header__icon::after {
     left: 0;
     position: absolute;
     height: 10%;
@@ -338,30 +338,30 @@ footer{
     background-color: #000000;
     border: 1px solid white;
   }
-  .nav__icon::before,
-  .nav__icon::after {
+  .header__icon::before,
+  .header__icon::after {
     content: "";
   }
-  .nav__icon::before {
+  .header__icon::before {
     top: 0;
   }
-  .nav__icon::after {
+  .header__icon::after {
     bottom: 0;
   }
 
-  .nav__icon span {
+  .header__icon span {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
 
-  .nav__icon._active span {
+  .header__icon._active span {
     transform: scale(0) translate(0px, -50%);
   }
-  .nav__icon._active::before {
+  .header__icon._active::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
   }
-  .nav__icon._active::after {
+  .header__icon._active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
   }
@@ -424,6 +424,10 @@ footer{
 
   .intro__span {
     font-size: 25px;
+  }
+
+  .about__blocks{
+    border-radius: 0px;
   }
 
 }

@@ -1,6 +1,6 @@
 "use strict"
 
-const iconMenu = document.querySelector('.nav__icon');
+const iconMenu = document.querySelector('.header__icon');
 const menuBody = document.querySelector('.nav__body');
 if (iconMenu) {
     iconMenu.addEventListener("click", function () {
